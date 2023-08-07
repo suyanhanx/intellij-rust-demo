@@ -8,7 +8,7 @@ pub struct Foo {}
 
 #[napi]
 impl Foo {
-    #[napi]
+    #[napi(constructor)]
     pub fn new() -> Result<Self> {
         println!("new");
         Ok(Self {})
